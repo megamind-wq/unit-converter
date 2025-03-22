@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Unit Converter</h1>
+        <div class="language-selector">
+            <span class="language-label">Language:</span>
+            <select id="language" onchange="updateLanguage()">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Português</option>
+                <option value="ru">Русский</option>
+                <option value="zh">中文 (简体)</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+    </div>
+    <div class="category-container">
+        <div class="category-grid" id="categoryGrid"></div>
+    </div>
+    <div class="main-content">
+        <div class="converter-box">
+            <h2 id="convert">Convert</h2>
+            <input type="number" id="inputValue" placeholder="Enter value" step="any">
+            <select id="fromUnit"></select>
+            <span id="toText">to</span>
+            <select id="toUnit"></select>
+            <br>
+            <button onclick="convert()" id="convertButton">Convert</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <div class="how-to-use">
+        <h2>How to Use the Unit Converter</h2>
+        <p>
+            To use the Unit Converter, start by selecting a category from the grid above, such as Length or Weight. 
+            Next, enter a numerical value in the input field provided. Choose the unit you want to convert from and the unit you want to convert to using the dropdown menus. 
+            Click the "Convert" button to see the result displayed below. 
+            The tool supports multiple languages, which you can switch using the dropdown in the header. 
+            Results are rounded to four decimal places for precision. 
+            Experiment with different categories and units to meet your conversion needs!
+        </p>
+    </div>
+    <div class="bottom-background">
+        <footer id="copyright"></footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #F5F5F5; /* Dark white (light gray) background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure body fills viewport height */
+}
+.header {
+    background-color: #E6F0FA; /* Faded blue for header */
+    padding: 15px 0;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.language-selector {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+.language-label {
+    margin-right: 5px;
+    font-size: 14px;
+    color: #2F4F4F; /* Dark slate gray to match "Convert" */
+}
+.category-container {
+    background-color: white; /* White enclosure for category boxes */
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    gap: 3px;
+}
+.category-button {
+    padding: 10px;
+    font-size: 14px; /* Larger font */
+    font-weight: bold;
+    background-color: #4682B4; /* Blue color for boxes */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+.category-button.active {
+    background-color: #2E5E8A; /* Darker blue for active state */
+}
+.main-content {
+    width: 100%;
+    max-width: 600px; /* Matches converter-box max-width */
+    margin: 0 auto; /* Center the converter box */
+    margin-top: 90.71px; /* Total 2.4 cm (~90.71px at 96 DPI): 75.59px (2 cm) + 15.12px (0.4 cm) */
+}
+.converter-box {
+    max-width: 600px;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Reduced height from 387px */
+}
+.converter-box h2 {
+    color: #2F4F4F; /* Dark slate gray for "Convert" */
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+select, input {
+    padding: 8px;
+    margin: 3px;
+    font-size: 14px;
+    border: 1px solid #A9A9A9;
+    border-radius: 4px;
+    background-color: #F8F8F8;
+}
+button {
+    padding: 8px 16px;
+    margin: 3px;
+    font-size: 14px;
+    background-color: #32CD32; /* Lime green for button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #228B22; /* Darker green on hover */
+}
+#toText {
+    color: #696969; /* Dim gray for "to" */
+}
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #191970; /* Midnight blue for result */
+    font-size: 14px;
+}
+.how-to-use {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 132.28px; /* 3.5 cm (~132.28px at 96 DPI) below converter-box */
+    margin-bottom: 151.18px; /* 4 cm (~151.18px) gap before copyright */
+    padding: 15px;
+    background-color: #FFFFFF;
+    border: none; /* Removed border lines */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.how-to-use h2 {
+    color: #2F4F4F; /* Matches "Convert" heading */
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+.how-to-use p {
+    font-size: 14px;
+    color: #333; /* Dark gray for readability */
+    margin: 0;
+    line-height: 1.5; /* Adjusted for ~7-8 lines */
+}
+.bottom-background {
+    width: 100%;
+    background-color: #F5F5F5; /* Dark white to match body background */
+    flex-grow: 1; /* Expands to fill remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns footer to bottom */
+}
+footer {
+    font-size: 12px;
+    color: #333; /* Dark gray for readability */
+    margin-top: 10px;
+    margin-bottom: 10px; /* Space from bottom edge */
+}
